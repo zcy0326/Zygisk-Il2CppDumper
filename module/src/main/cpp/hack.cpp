@@ -17,6 +17,7 @@
 #include <array>
 
 void hack_start() {
+    sleep(10);
     安装hook();
 
 }
