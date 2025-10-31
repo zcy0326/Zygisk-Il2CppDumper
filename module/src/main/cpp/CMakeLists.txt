@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.18.1)
-
+if(NOT ANDROID_ABI STREQUAL "arm64-v8a")
+    message(FATAL_ERROR "This project only supports arm64-v8a architecture")
+endif()
 if (NOT DEFINED MODULE_NAME)
     message(FATAL_ERROR "MODULE_NAME is not set")
 else ()
