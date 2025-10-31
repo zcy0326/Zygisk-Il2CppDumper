@@ -4,6 +4,7 @@
 
 #include "hack.h"
 #include "cheat.h"
+#include "log.h"
 #include <cstring>
 #include <cstdio>
 #include <unistd.h>
